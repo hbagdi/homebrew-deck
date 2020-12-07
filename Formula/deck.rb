@@ -4,6 +4,8 @@ class Deck < Formula
   homepage "https://github.com/kong/deck"
   version "1.2.3"
   bottle :unneeded
+  disable! date: "2021-01-15", because: "Please use the new tap at https://github.com/kong/homebrew-deck"
+  deprecate! date: "2020-12-01", because: "Please use the new tap at https://github.com/kong/homebrew-deck"
 
   if OS.mac?
     url "https://github.com/Kong/deck/releases/download/v1.2.3/deck_1.2.3_darwin_amd64.tar.gz"
